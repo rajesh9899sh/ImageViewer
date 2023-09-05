@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-color: lightcyan;
+}
+.heading {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: lightgray;
+  padding: 0.4rem 3.5rem;
+  margin-bottom: 5px;
+  width: 100vw;
+}
+.headingImage img {
+  width: 55vw;
+  height: 55vh;
+  border-radius: 6px;
+}
+
+.headingImage {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: -10px 9px 5px -5px rgba(12, 10, 10, 0.75);
+}
+
+.selected {
+  margin-bottom: 0.5rem;
+}
+.viewer {
+  width: 100vw;
+  height: 35vh;
+  margin-top: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f3f7;
+}
+.viewer img {
+  cursor: pointer;
+  width: 18vw;
+  height: 23vh;
+  object-fit: cover;
+  border: 1px solid black;
+}
+.viewer img.border {
+  opacity: 0.5;
+  border: 1px solid rgb(84, 84, 128);
+}
+
+.selected select {
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 4px;
+  background-color: rgb(105, 144, 176);
+  color: black;
+  padding: 3px;
+}
+
+@media screen and (max-width: 990px) {
+  .mainImage img {
+    height: 55vh;
+    width: 80vw;
+  }
+  .imageViewer img {
+    height: 23vh;
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .imageViewer img {
+    height: 23vh;
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .mainImage img {
+    height: 49vh;
+    width: 84vw;
+  }
+  .imageViewer img {
+    height: 23vh;
+    width: 56vw;
+  }
+  .imageViewer {
+    padding: 16px;
+  }
+}
